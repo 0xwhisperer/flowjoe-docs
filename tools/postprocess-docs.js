@@ -8,7 +8,9 @@
 //     Mintlify's CDNs into /vendor-assets/ and rewrites references to the local copies.
 //  2. Hides the search UI (search needs Mintlify's servers and cannot work in a static export)
 //     and blocks the Cmd/Ctrl+K and "/" shortcuts, via an injected <style>/<script> in each page.
-//  3. Neutralizes Mintlify-only background requests (/_mintlify/api/user and the socket.io
+//  3. Injects a tiny pre-paint script (tools/theme-snippet.js) that sets the manual's light/dark mode:
+//     ?theme= in the address, then the saved toggle choice, then the browser's preference, then DARK.
+//  4. Neutralizes Mintlify-only background requests (/_mintlify/api/user and the socket.io
 //     live-reload connection) with minimal patches to the bundled JS.
 // Usage: node tools/postprocess-docs.js   (run from the repo root, after copying docs-site/ in)
 "use strict";
@@ -21,6 +23,9 @@ const ICON_HOST = "https://d3gk2c5xim1je2.cloudfront.net";
 const KATEX_URL = "https://d4tuoctqmanu0.cloudfront.net/katex.min.css";
 const KATEX_VER = "0.16.47"; // font files: Mintlify's CDN does not serve them, so they come from the katex npm package
 const MARK = "fj-postprocess";
+const {THEME_SCRIPT, THEME_ID} = require("./theme-snippet.js");
+const THEME_TAG = `<script id="${THEME_ID}">${THEME_SCRIPT}</script>`;
+const THEME_RE = new RegExp(`<script id="${THEME_ID}">.*?</script>`, "gs");
 
 function walk(dir, out = []) {
   for (const e of fs.readdirSync(dir, {withFileTypes: true})) {
@@ -97,7 +102,9 @@ const PATCHES = [
     s = s.split(KATEX_URL).join("/" + VENDOR + "/katex/katex.min.css");
     if (f.endsWith(".js")) PATCHES.forEach((p, i) => { s = s.replace(p.re, (m, c1) => (patchHits[i]++, p.to.replace("$1", c1))); });
     if (f.endsWith(".html") && s.includes("</head>")) {
-      s = s.replace(new RegExp(`<style id="${MARK}">.*?</style><script id="${MARK}-js">.*?</script>`, "s"), ""); s = s.replace("</head>", INJECT + "</head>"); injected++; }
+      s = s.replace(new RegExp(`<style id="${MARK}">.*?</style><script id="${MARK}-js">.*?</script>`, "s"), ""); s = s.replace("</head>", INJECT + "</head>");
+      // Theme bootstrap goes FIRST in <head> (before any stylesheet, so no flash). Re-runs replace it, never stack it.
+      s = s.replace(THEME_RE, "").replace(/<head(\s[^>]*)?>/, m => m + THEME_TAG); injected++; }
     if (s !== o) { fs.writeFileSync(f, s); rewritten++; }
   }
   // /llms.txt: every page carries a hidden link to it, but the export does not include one.
