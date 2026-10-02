@@ -1,0 +1,62 @@
+# FlowJoe Docs
+
+> User documentation for FlowJoe, a local-first visual workspace.
+
+## Pages
+
+- [AI as a Collaborator](https://docs.flowjoe.app/concepts/ai-collaborator): Meet Joe — a powerful AI assistant that coordinates, outlines, and researches under your control.
+- [Local-First Storage](https://docs.flowjoe.app/concepts/local-first): Instant speed, complete privacy, and total ownership of your work.
+- [Plugin Architecture](https://docs.flowjoe.app/concepts/plugin-architecture): Technical manifest schemas, extension fields contract, and template remapping rules.
+- [Plugins &amp; Verticals](https://docs.flowjoe.app/concepts/plugins-verticals): Explore FlowJoe&#x27;s plugin framework roadmap and the professional domains it targets.
+- [Security &amp; Privacy](https://docs.flowjoe.app/concepts/security): Data ownership, local OS keychain isolation, AI context gating, and encrypted backups.
+- [Structure · References · Meaning](https://docs.flowjoe.app/concepts/structure-references-meaning): The core triad that defines every FlowJoe workspace — how order, reference, and intent work together.
+- [Ways to Use FlowJoe](https://docs.flowjoe.app/concepts/ways-to-use-flowjoe): Discover how different professionals and teams utilize FlowJoe&#x27;s visual tree and media slots, ordered from professional workflows to creative disciplines.
+- [Adding Media &amp; Local Files](https://docs.flowjoe.app/gallery/adding-media): Drag-and-drop, copy-paste, and referencing files on disk.
+- [Gallery &amp; Slot Anatomy](https://docs.flowjoe.app/gallery/anatomy): The media hemisphere — slots, cards, and interactive elements.
+- [Global Audio Player &amp; Soundtrack](https://docs.flowjoe.app/gallery/audio-player): Vibe to your favorite music, work tapes, podcast refs, or voice logs without breaking your flow state.
+- [In-App Browser &amp; Web Clipping](https://docs.flowjoe.app/gallery/browser): Research, bookmark, and clip web references directly into outline slots without leaving your workspace.
+- [Canvas Connections](https://docs.flowjoe.app/gallery/connections): Draw relationship lines between slots on the Canvas layout.
+- [Gallery Layouts &amp; Slot Notes](https://docs.flowjoe.app/gallery/layouts): Configure how you view your media and write slot annotations.
+- [Slot Preview](https://docs.flowjoe.app/gallery/preview): The full-size view you get when you click a slot, and its rich-text notes editor.
+- [Supported Media &amp; Slots](https://docs.flowjoe.app/gallery/slot-types): An overview of supported file formats, previews, and URL cards.
+- [Media Stacks](https://docs.flowjoe.app/gallery/stacks): Combine multiple versions or reference takes into a single slot.
+- [Tags &amp; Virtual Galleries](https://docs.flowjoe.app/gallery/tags): Flow-wide tags and dynamic cross-cutting search results.
+- [Integrated Terminal (Forge)](https://docs.flowjoe.app/gallery/terminal): Run local shell sessions, manage multiple tabs, and drag-and-drop terminals directly inside the visual client.
+- [The two hemispheres](https://docs.flowjoe.app/getting-started/hemispheres): Tree on the left, gallery on the right, and the divider as your control between structure and visual space.
+- [Core mental model](https://docs.flowjoe.app/getting-started/mental-model): Structure, references, and meaning — the three first-class ideas behind every FlowJoe workspace.
+- [Quick Start &amp; Onboarding](https://docs.flowjoe.app/getting-started/quickstart): A walkthrough of your first-run welcome wizard and the interactive coach-mark tour in FlowJoe.
+- [Organizing Stacks &amp; Tags](https://docs.flowjoe.app/guides/creative-stacks): Learn how to manage design variants and tag references across nodes.
+- [Restructuring with Joe](https://docs.flowjoe.app/guides/joe-restructure): Use Joe to organize, clean up, and reschedule your hierarchy.
+- [Data Portability &amp; Backups](https://docs.flowjoe.app/guides/portability): How to move a project to a new computer without losing files.
+- [Build a Research Board](https://docs.flowjoe.app/guides/research-board): Step-by-step guide to gathering, annotating, and reviewing research materials.
+- [Introduction](https://docs.flowjoe.app/index): FlowJoe is a local-first visual workspace for branching, reference-heavy work — structure on the left, media on the right, and an AI collaborator that never owns your tree.
+- [Agent Bridge (MCP)](https://docs.flowjoe.app/joe/agent-bridge): Connect terminal-based AI agents and developer scripts directly to your local FlowJoe workspace.
+- [Automations &amp; Schedules](https://docs.flowjoe.app/joe/automation): Schedule recurring background AI tasks to keep your outlines, links, and media fresh.
+- [Prompting &amp; Best Practices](https://docs.flowjoe.app/joe/best-practices): Guidelines for writing successful prompts, structuring complex tasks, and working safely with Joe.
+- [Bring Your Own Brain (BYOB)](https://docs.flowjoe.app/joe/byob): Total privacy, zero subscription fees, and complete control over your AI models.
+- [Chat, Analysis &amp; Dictation](https://docs.flowjoe.app/joe/chat-analysis-generation): Ask questions, analyze spreadsheets, generate graphics, and dictate notes.
+- [Context &amp; Memories](https://docs.flowjoe.app/joe/memories-compaction): Manage token budgets, compact chats, and store attachment summaries.
+- [Meeting Joe](https://docs.flowjoe.app/joe/opening-joe): How to open Joe, interact, and manage active AI chat sessions.
+- [Permissions &amp; Privacy](https://docs.flowjoe.app/joe/permissions): You control what Joe sees and what Joe is allowed to propose.
+- [Pet Joe](https://docs.flowjoe.app/joe/pet-joe): Show, resize, and interact with the optional animated companion in FlowJoe&#x27;s gallery.
+- [The Propose-Approve Loop](https://docs.flowjoe.app/joe/propose-approve): How structural changes are applied, reviewed, and audited.
+- [Token usage with Joe](https://docs.flowjoe.app/joe/token-usage): What each send costs, how the token bar works, and how to shrink the flow map.
+- [Export &amp; Import](https://docs.flowjoe.app/portability/export-import): Transfer workspaces, copy subtree JSON, and save password-protected archives.
+- [Storage &amp; Preferences](https://docs.flowjoe.app/portability/storage-diagnostics): Monitor database size, manage keys, and clean up orphaned files.
+- [Glossary](https://docs.flowjoe.app/reference/glossary): Key terminology and concepts used throughout FlowJoe.
+- [Keyboard Shortcuts](https://docs.flowjoe.app/reference/keyboard-shortcuts): Hotkey reference aligned with the in-app Keyboard Shortcuts legend, plus a few extra app-wide keys.
+- [Honest Limitations](https://docs.flowjoe.app/reference/limitations): A transparent list of boundaries and unsupported behaviors in FlowJoe.
+- [Rich-Text Editor](https://docs.flowjoe.app/reference/rich-text-editor): The shared writing surface behind Node Summary, Flow Summary, slot Preview notes, and gallery slot notes — slash commands, emoji, the bubble menu, AI actions, and markdown shortcuts.
+- [Settings Map](https://docs.flowjoe.app/reference/settings-map): A comprehensive breakdown of all application settings in FlowJoe.
+- [Status Bar (Footer)](https://docs.flowjoe.app/reference/status-bar): What the bottom status bar shows and what you can change without opening Settings.
+- [Tree anatomy](https://docs.flowjoe.app/tree/anatomy): How a Flow is built: roots, nodes, parents, children, and siblings — the spine of every workspace.
+- [Managing Nodes](https://docs.flowjoe.app/tree/creating-renaming-reordering): Add, edit, duplicate, and organize nodes in the hierarchy.
+- [Flow Summary](https://docs.flowjoe.app/tree/flow-summary): One durable summary for your whole tree, not just a single node.
+- [Navigating &amp; Multi-Select](https://docs.flowjoe.app/tree/navigating): How to move around, filter, and bulk-edit your FlowJoe tree.
+- [Status, Themes &amp; Protection](https://docs.flowjoe.app/tree/status-theming): Visual status indicators, branch theming, and the four orthogonal node protection states.
+- [Node Summaries](https://docs.flowjoe.app/tree/summaries): Durable, high-level context summaries for human clarity and AI grounding.
+- [Calendar Workbench](https://docs.flowjoe.app/workbenches/calendars): Manage timelines, schedules, and ICS files in a unified view.
+- [Rich Document Workbench](https://docs.flowjoe.app/workbenches/rich-documents): Real word-processing islands for drafting documents.
+- [Spreadsheet Workbench](https://docs.flowjoe.app/workbenches/spreadsheets): Live, formulas-ready spreadsheets running inside your gallery slots.
+- [Workspace Folders](https://docs.flowjoe.app/workspaces/folders): Save a Flow as a normal folder on your drive, so your work sits in plain files you can back up, version, and see.
+- [History &amp; Recovery](https://docs.flowjoe.app/workspaces/recovery): Restore points that let you jump back to an earlier version of your Flow, plus the safety nets that keep your work when something goes wrong.
