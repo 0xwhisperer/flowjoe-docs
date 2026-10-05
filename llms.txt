@@ -60,3 +60,4 @@
 - [Spreadsheet Workbench](https://docs.flowjoe.app/workbenches/spreadsheets): Live, formulas-ready spreadsheets running inside your gallery slots.
 - [Workspace Folders](https://docs.flowjoe.app/workspaces/folders): Save a Flow as a normal folder on your drive, so your work sits in plain files you can back up, version, and see.
 - [History &amp; Recovery](https://docs.flowjoe.app/workspaces/recovery): Restore points that let you jump back to an earlier version of your Flow, plus the safety nets that keep your work when something goes wrong.
+- [Sharing, Guests and Presenting](https://docs.flowjoe.app/workspaces/sharing-and-presenting): Invite people to view or edit a Flow in their browser, see who is where, and walk them through your Flow live.
