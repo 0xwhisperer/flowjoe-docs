@@ -53,7 +53,7 @@
 - [Managing Nodes](https://docs.flowjoe.app/tree/creating-renaming-reordering): Add, edit, duplicate, and organize nodes in the hierarchy.
 - [Flow Summary](https://docs.flowjoe.app/tree/flow-summary): One durable summary for your whole tree, not just a single node.
 - [Navigating &amp; Multi-Select](https://docs.flowjoe.app/tree/navigating): How to move around, filter, and bulk-edit your FlowJoe tree.
-- [Repo nodes and Git](https://docs.flowjoe.app/tree/repositories): Keep a project in its own Git repository inside FlowJoe, review changes, create commits, and work with branches and GitHub.
+- [Repo nodes and Git](https://docs.flowjoe.app/tree/repositories): Keep a project in its own Git repository inside FlowJoe, review changes, create commits, and work with branches and Git remotes.
 - [Status, Themes &amp; Protection](https://docs.flowjoe.app/tree/status-theming): Visual status indicators, branch theming, and the four orthogonal node protection states.
 - [Node Summaries](https://docs.flowjoe.app/tree/summaries): Durable, high-level context summaries for human clarity and AI grounding.
 - [Calendar Workbench](https://docs.flowjoe.app/workbenches/calendars): Manage timelines, schedules, and ICS files in a unified view.
