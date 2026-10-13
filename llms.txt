@@ -41,6 +41,7 @@
 - [Pet Joe](https://docs.flowjoe.app/joe/pet-joe): Show, resize, and interact with the optional animated companion in FlowJoe&#x27;s gallery.
 - [The Propose-Approve Loop](https://docs.flowjoe.app/joe/propose-approve): How structural changes are applied, reviewed, and audited.
 - [Token usage with Joe](https://docs.flowjoe.app/joe/token-usage): What each send costs, how the token bar works, and how to shrink the flow map.
+- [Transcribe audio](https://docs.flowjoe.app/joe/transcription): Turn a recording into text for free on your computer, or use your paid OpenAI API account.
 - [Export &amp; Import](https://docs.flowjoe.app/portability/export-import): Transfer workspaces, copy subtree JSON, and save password-protected archives.
 - [Storage &amp; Preferences](https://docs.flowjoe.app/portability/storage-diagnostics): Monitor database size, manage keys, and clean up orphaned files.
 - [Glossary](https://docs.flowjoe.app/reference/glossary): Key terminology and concepts used throughout FlowJoe.
