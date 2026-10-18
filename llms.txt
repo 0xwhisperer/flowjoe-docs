@@ -4,6 +4,10 @@
 
 ## Pages
 
+- [CLI approvals and troubleshooting](https://docs.flowjoe.app/cli/approvals-and-troubleshooting): Understand approval choices and resolve common connection or command problems.
+- [CLI commands](https://docs.flowjoe.app/cli/commands): The commands and options available in flowjoe-cli.
+- [Start using the CLI](https://docs.flowjoe.app/cli/getting-started): Read, search, and change your open Flow from a terminal.
+- [CLI scripting and action lists](https://docs.flowjoe.app/cli/scripting): Use JSON, pipes and shared results in repeatable FlowJoe workflows.
 - [AI as a collaborator](https://docs.flowjoe.app/concepts/ai-collaborator): Meet Joe: a partner for thinking, creating, and organizing your workspace.
 - [Local-first storage](https://docs.flowjoe.app/concepts/local-first): Keep your work close, work offline, and take it with you.
 - [About future plugins](https://docs.flowjoe.app/concepts/plugin-architecture): What the planned plugin system means for people using FlowJoe today.
