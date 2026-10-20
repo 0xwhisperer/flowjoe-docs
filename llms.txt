@@ -31,6 +31,7 @@
 - [Media Stacks](https://docs.flowjoe.app/gallery/stacks): Combine multiple versions or reference takes into a single slot.
 - [Tags &amp; Virtual Galleries](https://docs.flowjoe.app/gallery/tags): Flow-wide tags and dynamic cross-cutting search results.
 - [Integrated terminal (Forge)](https://docs.flowjoe.app/gallery/terminal): Keep shell sessions and connected coding assistants beside your workspace.
+- [Virtual Slots](https://docs.flowjoe.app/gallery/virtual-slots): Show the same slot in more than one node without copying it.
 - [The two hemispheres](https://docs.flowjoe.app/getting-started/hemispheres): Tree on the left, gallery on the right, and the divider as your control between structure and visual space.
 - [Core mental model](https://docs.flowjoe.app/getting-started/mental-model): Structure, references, and meaning — the three first-class ideas behind every FlowJoe workspace.
 - [Quick Start &amp; Onboarding](https://docs.flowjoe.app/getting-started/quickstart): A walkthrough of your first-run welcome wizard and the interactive coach-mark tour in FlowJoe.
