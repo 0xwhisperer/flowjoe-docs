@@ -70,6 +70,7 @@
 - [Calendar Workbench](https://docs.flowjoe.app/workbenches/calendars): Manage timelines, schedules, and ICS files in a unified view.
 - [Rich Document Workbench](https://docs.flowjoe.app/workbenches/rich-documents): Real word-processing islands for drafting documents.
 - [Spreadsheet Workbench](https://docs.flowjoe.app/workbenches/spreadsheets): Live, formulas-ready spreadsheets running inside your gallery slots.
+- [Chat](https://docs.flowjoe.app/workspaces/chat): Talk with the people you share a Flow with: one group conversation for everyone, and private messages between two people.
 - [Workspace Folders](https://docs.flowjoe.app/workspaces/folders): Save a Flow as a normal folder on your drive, so your work sits in plain files you can back up, version, and see.
 - [History &amp; Recovery](https://docs.flowjoe.app/workspaces/recovery): Restore points that let you jump back to an earlier version of your Flow, plus the safety nets that keep your work when something goes wrong.
 - [Sharing, Guests and Presenting](https://docs.flowjoe.app/workspaces/sharing-and-presenting): Invite people to view or edit a Flow in their browser, see who is where, and walk them through your Flow live.
