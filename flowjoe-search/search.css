@@ -1,5 +1,8 @@
 /* The existing snapshot harness mounts the actual exported docs shell and its styles below. */
 @media (min-width: 1280px) {
+  html #topbar-cta-button {
+    translate: var(--ds-cta-offset, 0px) 0;
+  }
   html #search-bar-entry {
     margin: 0;
     position: fixed;
