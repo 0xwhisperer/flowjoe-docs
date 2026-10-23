@@ -1,0 +1,159 @@
+/* The existing snapshot harness mounts the actual exported docs shell and its styles below. */
+@media (min-width: 1280px) {
+  html #search-bar-entry {
+    margin: 0;
+    position: fixed;
+    left: var(--ds-article-left);
+    width: var(--ds-header-search-width);
+    max-width: none;
+  }
+}
+.ds-dialog {
+  padding: 0;
+  margin: min(15vh, 120px) auto 0;
+  width: min(640px, calc(100vw - 32px));
+  max-height: 76vh;
+  border: 1px solid rgb(var(--gray-200));
+  border-radius: 16px;
+  background: rgb(var(--background-light));
+  color: rgb(var(--gray-800));
+  box-shadow: 0 24px 100px #0005;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+.dark .ds-dialog {
+  background: rgb(var(--gray-950));
+  color: rgb(var(--gray-200));
+  border-color: rgb(var(--gray-800));
+}
+.ds-dialog::backdrop {
+  background: #0007;
+  backdrop-filter: blur(4px);
+}
+.ds-query {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 20px;
+  border-bottom: 1px solid rgb(var(--gray-200));
+}
+.dark .ds-query,
+.dark .ds-footer {
+  border-color: rgb(var(--gray-800));
+}
+.ds-query svg {
+  width: 20px;
+  height: 20px;
+  color: rgb(var(--primary));
+  flex-shrink: 0;
+}
+.ds-query input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  color: inherit;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  font-size: 16px;
+}
+.ds-close {
+  background: transparent;
+  color: rgb(var(--gray-500));
+  font-size: 11px;
+  border: 1px solid rgb(var(--gray-300));
+  border-radius: 5px;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+.ds-results {
+  padding: 10px;
+  max-height: 49vh;
+  overflow: auto;
+}
+.ds-label {
+  padding: 8px 12px;
+  color: rgb(var(--gray-500));
+  font-size: 12px;
+}
+.ds-result {
+  display: block;
+  padding: 13px 14px;
+  border-radius: 9px;
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+.ds-result[aria-selected="true"] {
+  background: rgb(var(--primary) / 0.1);
+  box-shadow: inset 0 0 0 1px rgb(var(--primary) / 0.2);
+}
+.ds-result small {
+  display: block;
+  font-size: 11px;
+  color: rgb(var(--gray-500));
+  margin-bottom: 3px;
+}
+.ds-result strong {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ds-result p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgb(var(--gray-500));
+  margin: 5px 0 0;
+}
+.ds-result mark {
+  background: transparent;
+  color: rgb(var(--primary));
+  font-weight: 600;
+}
+.ds-enter {
+  font-size: 15px;
+  color: rgb(var(--primary));
+  opacity: 0;
+}
+.ds-result[aria-selected="true"] .ds-enter {
+  opacity: 1;
+}
+.ds-footer {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(var(--gray-200));
+  padding: 11px 20px;
+  color: rgb(var(--gray-500));
+  font-size: 11px;
+}
+.ds-empty {
+  padding: 35px 20px;
+  text-align: center;
+}
+
+.ds-status {
+  padding: 8px 12px;
+  color: rgb(var(--gray-500));
+  font-size: 12px;
+}
+.ds-more {
+  display: block;
+  margin: 8px auto;
+  color: rgb(var(--primary));
+  padding: 8px 16px;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .ds-footer {
+    gap: 6px;
+  }
+  .ds-dialog {
+    margin-top: 32px;
+  }
+}
