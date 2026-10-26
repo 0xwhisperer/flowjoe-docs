@@ -25,6 +25,7 @@
 - [Global Audio Player &amp; Soundtrack](https://docs.flowjoe.app/gallery/audio-player): Vibe to your favorite music, work tapes, podcast refs, or voice logs without breaking your flow state.
 - [In-App Browser &amp; Web Clipping](https://docs.flowjoe.app/gallery/browser): Research, bookmark, and clip web references directly into outline slots without leaving your workspace.
 - [Canvas Connections](https://docs.flowjoe.app/gallery/connections): Draw relationship lines between slots on the Canvas layout.
+- [Image Editor](https://docs.flowjoe.app/gallery/image-editor): Edit a picture in a full editor and save the result as a new version of its slot.
 - [Gallery Layouts &amp; Slot Notes](https://docs.flowjoe.app/gallery/layouts): Configure how you view your media and write slot annotations.
 - [Slot Preview](https://docs.flowjoe.app/gallery/preview): The full-size view you get when you click a slot, and its rich-text notes editor.
 - [Supported Media &amp; Slots](https://docs.flowjoe.app/gallery/slot-types): An overview of supported file formats, previews, and URL cards.
