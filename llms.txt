@@ -4,6 +4,8 @@
 
 ## Pages
 
+- [Account data and privacy](https://docs.flowjoe.app/account-privacy): What your FlowJoe account stores, where it is kept, and what never leaves your computer.
+- [Your FlowJoe account](https://docs.flowjoe.app/account): Sign in at account.flowjoe.app with an email code, see your account, manage signed-in computers and browsers, and change your email.
 - [CLI action reference](https://docs.flowjoe.app/cli/action-reference): Every bridge action: what it does, inputs, examples, results, and approvals.
 - [CLI approvals and troubleshooting](https://docs.flowjoe.app/cli/approvals-and-troubleshooting): Understand approval choices and resolve common connection or command problems.
 - [CLI commands](https://docs.flowjoe.app/cli/commands): The commands and options available in flowjoe-cli.
