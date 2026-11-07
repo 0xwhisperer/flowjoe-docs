@@ -47,3 +47,13 @@ test("unrelated requests are preserved", () => {
   const source='const user=await fetch("/my-local-search-index.json");';
   assert.equal(rewriteContent(source,true),source);
 });
+
+test("current export asset mapper preserves local vendor URLs and still maps external assets", () => {
+  const source='const root=`https://d3gk2c5xim1je2.cloudfront.net`;function mapAsset(e){let n;try{n=new URL(e)}catch{return e}if(n.protocol!==`https:`&&n.protocol!==`http:`)return e;return `/_mintlify/export-assets/${n.hostname}${n.pathname}`}globalThis.local=mapAsset(root+"/fontawesome/v7.2.0/solid/earth-americas.svg");globalThis.external=mapAsset("https://example.com/other.svg");';
+  const patched=rewriteContent(source,true);
+  const context=vm.createContext({location:{origin:"http://127.0.0.1:3210"},URL});
+  vm.runInContext(patched,context);
+  assert.equal(context.local,"/vendor-assets/icons/fontawesome/v7.2.0/solid/earth-americas.svg");
+  assert.equal(context.external,"/_mintlify/export-assets/example.com/other.svg");
+  assert.equal(rewriteContent(patched,true),patched);
+});

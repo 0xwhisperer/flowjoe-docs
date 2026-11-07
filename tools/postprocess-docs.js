@@ -68,6 +68,9 @@ function iconPathsIn(source) {
 function rewriteContent(source, javascript, patchHits = PATCHES.map(() => 0)) {
   let s = source;
   if (javascript) s = s.replace(/["`]https:\/\/d3gk2c5xim1je2\.cloudfront\.net["`]/g, '(location.origin+"/' + VENDOR + '/icons")');
+  // Current exports remap absolute asset URLs into export-assets. Keep our already-local
+  // vendor URLs local rather than remapping them under the browser's hostname a second time.
+  if (javascript) s = s.replace(/try\{([\w$]+)=new URL\(([\w$]+)\)\}catch\{return \2\}if\(\1\.protocol/g, 'try{$1=new URL($2)}catch{return $2}if($1.origin===location.origin&&$1.pathname.startsWith("/vendor-assets/"))return $1.pathname+$1.search+$1.hash;if($1.protocol');
   s = s.split(EXPORTED_ICON_HOST).join("/" + VENDOR + "/icons");
   s = s.split(ICON_HOST).join("/" + VENDOR + "/icons");
   s = s.split(KATEX_URL).join("/" + VENDOR + "/katex/katex.min.css");
