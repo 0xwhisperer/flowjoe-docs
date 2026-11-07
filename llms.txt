@@ -36,6 +36,7 @@
 - [Integrated terminal (Forge)](https://docs.flowjoe.app/gallery/terminal)
 - [Virtual Slots](https://docs.flowjoe.app/gallery/virtual-slots)
 - [The two hemispheres](https://docs.flowjoe.app/getting-started/hemispheres)
+- [Install FlowJoe](https://docs.flowjoe.app/getting-started/install)
 - [Core mental model](https://docs.flowjoe.app/getting-started/mental-model)
 - [Quick Start &amp; Onboarding](https://docs.flowjoe.app/getting-started/quickstart)
 - [Organizing Stacks &amp; Tags](https://docs.flowjoe.app/guides/creative-stacks)
