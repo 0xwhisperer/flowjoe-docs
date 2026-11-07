@@ -7,6 +7,9 @@ const { execFile } = require('child_process');
 
 const PORT = process.env.PORT || 3000;
 const DIR = __dirname;
+const BASE_PATH = "";
+
+const IMMUTABLE_PATH = /^\/(?:_next\/static|_mintlify\/assets|_mintlify\/export-assets)\//;
 
 const MIME_TYPES = {
   '.html': 'text/html',
@@ -45,6 +48,16 @@ function openInBrowser(url) {
   execFile(command, [url], () => undefined);
 }
 
+function resolveRscPayload(urlPath) {
+  const filePath = path.resolve(DIR, urlPath.replace(/^\/+/, ''), 'index.txt');
+  if (!filePath.startsWith(DIR + path.sep)) return undefined;
+  return fs.existsSync(filePath) && fs.statSync(filePath).isFile() ? filePath : undefined;
+}
+
+function isRscRequest(req) {
+  return req.headers.rsc === '1' || /[?&]_rsc=/.test(req.url || '');
+}
+
 function resolveFile(urlPath) {
   const filePath = path.resolve(DIR, urlPath.replace(/^\/+/, ''));
   if (!filePath.startsWith(DIR + path.sep) && filePath !== DIR) return undefined;
@@ -64,11 +77,30 @@ http
       return;
     }
 
-    const file = resolveFile(urlPath);
+    if (BASE_PATH && urlPath !== BASE_PATH && !urlPath.startsWith(BASE_PATH + '/')) {
+      if (urlPath === '/') {
+        res.writeHead(302, { Location: BASE_PATH + '/' });
+        res.end();
+        return;
+      }
+      res.writeHead(404, { 'Content-Type': 'text/plain' });
+      res.end('404 Not Found');
+      return;
+    }
+
+    const exportPath = urlPath.slice(BASE_PATH.length) || '/';
+    const rsc = isRscRequest(req);
+    const file = rsc ? resolveRscPayload(exportPath) : resolveFile(exportPath);
 
     if (file) {
       const ext = path.extname(file).toLowerCase();
-      res.writeHead(200, { 'Content-Type': MIME_TYPES[ext] || 'application/octet-stream' });
+      res.writeHead(200, {
+        'Content-Type': rsc ? 'text/x-component' : MIME_TYPES[ext] || 'application/octet-stream',
+        Vary: 'RSC',
+        'Cache-Control': IMMUTABLE_PATH.test(exportPath)
+          ? 'public, max-age=31536000, immutable'
+          : 'no-cache',
+      });
       fs.createReadStream(file).pipe(res);
     } else {
       res.writeHead(404, { 'Content-Type': 'text/plain' });
@@ -76,7 +108,7 @@ http
     }
   })
   .listen(PORT, () => {
-    const url = 'http://localhost:' + PORT;
+    const url = 'http://localhost:' + PORT + BASE_PATH + '/';
     console.log('Serving docs at ' + url);
     openInBrowser(url);
   });

@@ -1,0 +1,1 @@
+function e(e,t,n,r){return Math.hypot(e-n,t-r)}function t(e,t,n){return Math.min(Math.max(e,t),n)}function n(e,t){let n=10**t;return Math.round(e*n)/n}export{e as n,n as r,t};

@@ -1,0 +1,1 @@
+import{t as e}from"./lib-DuNMoZ05.js";function t(t,n){return t&&`run`in t?async function(r,i){let a=e(r,n);await t.run(a,i)}:function(r){return e(r,n||t)}}export{t};

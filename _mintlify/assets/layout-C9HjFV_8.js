@@ -1,0 +1,1 @@
+import{s as e}from"./rolldown-runtime-Bjp52BOI.js";import{sr as t}from"./initial-vendor-ByCBD7lK.js";var n=e(t());function r({children:e}){return(0,n.jsx)(`div`,{"data-theme-version":`2`,children:e})}export{r as default};
