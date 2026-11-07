@@ -61,7 +61,7 @@
 - [Storage &amp; preferences](https://docs.flowjoe.app/portability/storage-diagnostics)
 - [Glossary](https://docs.flowjoe.app/reference/glossary)
 - [Keyboard Shortcuts](https://docs.flowjoe.app/reference/keyboard-shortcuts)
-- [Honest Limitations](https://docs.flowjoe.app/reference/limitations)
+- [Limitations](https://docs.flowjoe.app/reference/limitations)
 - [Rich-Text Editor](https://docs.flowjoe.app/reference/rich-text-editor)
 - [Settings Map](https://docs.flowjoe.app/reference/settings-map)
 - [Status Bar (Footer)](https://docs.flowjoe.app/reference/status-bar)
