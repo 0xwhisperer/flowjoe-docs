@@ -160,3 +160,13 @@
     margin-top: 32px;
   }
 }
+
+/* Shown inside flowjoe.app/docs (see siteEmbed.js): the site header above replaces the docs logo and Get FlowJoe;
+   the sidebar rises to line up with the search bar. */
+html.fj-site-embed #navbar a[href="/"],
+html.fj-site-embed #navbar a[href="https://flowjoe.app/download"] { display: none; }
+html.fj-site-embed #navbar-transition { border-bottom-color: transparent; }
+@media (min-width: 1024px) {
+  html.fj-site-embed #sidebar { margin-top: -4.6rem; top: -0.6rem; height: calc(100vh + 0.6rem); z-index: 40; background: rgb(var(--background-light)); }
+  html.fj-site-embed.dark #sidebar { background: rgb(var(--background-dark)); }
+}
