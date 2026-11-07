@@ -166,6 +166,13 @@
 html.fj-site-embed #navbar a[href="/"],
 html.fj-site-embed #navbar a[href="https://flowjoe.app/download"] { display: none; }
 html.fj-site-embed #navbar-transition { border-bottom-color: transparent; }
+/* Inside flowjoe.app, line the light/dark switch up with the "On this page" column (shown from 1280px). Both are
+   anchored to the right edge, so the gap is a constant 13.5rem: the column's 19rem width, minus its 2.5rem left
+   padding and the switch's own 2rem width, minus the 1rem the header stops short of the column. Pages without the
+   column keep the switch on the right. */
+@media (min-width: 1280px) {
+  html.fj-site-embed:has(#table-of-contents) #theme-preference-menu-trigger { translate: -13.5rem 0; }
+}
 @media (min-width: 1024px) {
   html.fj-site-embed #sidebar { margin-top: -4.6rem; top: -0.6rem; height: calc(100vh + 0.6rem); z-index: 40; background: rgb(var(--background-light)); }
   html.fj-site-embed.dark #sidebar { background: rgb(var(--background-dark)); }
