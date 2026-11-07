@@ -6,6 +6,7 @@
 
 - [Account data and privacy](https://docs.flowjoe.app/account-privacy)
 - [Your FlowJoe account](https://docs.flowjoe.app/account)
+- [Changelog](https://docs.flowjoe.app/changelog)
 - [CLI action reference](https://docs.flowjoe.app/cli/action-reference)
 - [CLI approvals and troubleshooting](https://docs.flowjoe.app/cli/approvals-and-troubleshooting)
 - [CLI commands](https://docs.flowjoe.app/cli/commands)
